@@ -81,8 +81,7 @@ class Contact extends Component  {
                                     messages={{
                                         required:'Required\n',
                                         minLength: 'Must be greater than 2 characters\n',
-                                        maxLength: 'Must be 15 characters or less'
-                                    }}/>       
+                                        maxLength: 'Must be 15 characters or less'}}/>       
                                 </Col>
                             </Row>
                             <Row className="form-group">
