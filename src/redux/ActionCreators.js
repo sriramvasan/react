@@ -41,7 +41,7 @@ export const postFeedback =( firstname , lastname , telnum , email, agree, conta
         },
         error => {
             var errmess = new Error(error.message);
-            throw error;
+            throw errmess;
         })
         .then(response => response.json())
         .then(response => alert(JSON.stringify(response)))
@@ -214,7 +214,7 @@ export const fetchLeaders =( ) =>(dispatch) => {
         },
         error => {
             var errmess = new Error(error.message);
-            throw error
+            throw errmess
         })
         .then(response => response.json())
         .then(leaders =>  dispatch(addLeaders(leaders)))
